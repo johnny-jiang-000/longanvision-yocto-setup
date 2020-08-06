@@ -10,6 +10,7 @@ if [ "$1" != "" ]; then
     echo 'CONFIG_EXTRA_FIRMWARE_DIR="firmware"' >> $1/sources/meta-coral/meta-coral-bsp/recipes-kernel/linux/linux-imx/coral-dev/defconfig
     echo 'CONFIG_EXTRA_FIRMWARE="sdma-imx7d.bin"' >> $1/sources/meta-coral/meta-coral-bsp/recipes-kernel/linux/linux-imx/coral-dev/defconfig
     cp *.bin $1/build/tmp/work-shared/coral-dev/kernel-source/firmware
+    cp fsl-image-multimedia.bb $1/sources/meta-freescale-distro/recipes-fsl/images
 
 
 else
